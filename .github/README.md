@@ -23,6 +23,7 @@ Na implementáciu databázy sme použili SQLite.
 Pri grafike došlo k viacerým iteráciam ale na koniec sme sa rozhodli pre jednoduchú minimalistickú grafiku.
 
 ## Skripty
+[[Back to top]](https://github.com/BlackIstic/NomNom#index)
 
 Kód je rozdelený do 11 skriptov.
  Každý skript tvorí ucelenú časť, ktorá je pripojená prislúchajúcim objektom. 
