@@ -109,6 +109,7 @@ Tlačidlo zavolá InfoPanel spôsobom popísaným vyššie následne zmení mies
   Skript priradený špeciálnemu objektu prvého typu. Objekt po zjedení macmanom odstráni postavičky na pätnásť sekúnd z hry. Odstránenie z hry som robila posunutím nepriateľov na pozíciu mimo hracej plochy. Nepriatelia vlastne z hry nezmiznú len sú mimo dosahu macmana. Po pätnástich sekundách skript postavičky vráti na miesto kde boli na začiatku. V prípade že chce niekto skript použiť počas kolízie môže použiť podmienku if (“názov_objektu”.Equals(collision.gameObject.name)){}. Podmienku je potrebné dať do procedúry pracujúcej s kolíziou napríklad OnCollisionEnter2D alebo OnCollisionExit2D. 
   
 - Akbota Kassym
+ 
  Časť kódu, ktorú som urobila obsahuje skripty:
 - na prácu s nepriatelom macmana
 - na prácu s pohybom a bodmi
