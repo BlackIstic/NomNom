@@ -9,7 +9,7 @@ Hlavnou témou našej hry je satyricky boj zlého jedla proti dobrému
 - [Skripty](https://github.com/BlackIstic/NomNom#skripty)
 - [Prvky hry](https://github.com/BlackIstic/NomNom#prvky-hry)
   - [Ovladanie](https://github.com/BlackIstic/NomNom#ovladanie)
-- [Installation](https://github.com/BlackIstic/NomNom#installation)
+- [Instalacia](https://github.com/BlackIstic/NomNom#instalacia)
 - [Tvorcovia](https://github.com/BlackIstic/NomNom#tvorcovia)
 - [To-do](https://github.com/BlackIstic/NomNom#to-do)
 
@@ -53,6 +53,7 @@ Kód je rozdelený do 11 skriptov.
  V hre sú tieto predmety roztrúsené po mape a nachádzajú sa zväčša na nebezpečných miestach
 - Nepriatelia s rôznym spôsobom pohybu
 
+![](hra.gif)
 
 ## Ovladanie
 
@@ -65,7 +66,7 @@ Kód je rozdelený do 11 skriptov.
 | pohyb hore   | <kbd>šipka hore</kbd> 		 | <kbd>w</kbd>        |
 | pohyb dole   | <kbd>šipka dole</kbd>     	 | <kbd>s</kbd>        |
 
-## Installation
+## Instalacia
 
 [[Back to top]](https://github.com/BlackIstic/NomNom#index)
 
