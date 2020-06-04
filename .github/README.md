@@ -79,6 +79,17 @@ Kód je rozdelený do 11 skriptov.
 [[Back to top]](https://github.com/BlackIstic/NomNom#index)
 
 - Dominik Tóbi
+
+  - Bodydodatabazy.cs a Databaza.cs
+  Mojou hlavnou úlohou v tíme bolo analyzovať a navrhnúť využívanie databázy v našej hre. Keďže v našej hre získava hráč body navrhol som využiť databázu na prácu s týmito údajmi v podobe štatistiky najlepších hráčov. Prvotným návrhom bolo využitie MySQL, no po analýze údajov, som došiel k poznaniu, že pre náš projekt by bolo jednoduchšie využitie SQLite. SQLite nie je databázový engine typu klient-server, čo vyhovuje pre náš projekt, keďže chceme mať našu hru nezávislú od internetového pripojenia a nemusíme následne riešiť zapisovanie viacerých hráčov súčasne do jednej databázy. Pre fungovanie našej databázy som musel stiahnuť pár súborov a to Mono.Data.Sqlite.dll, sqlite3.def a sqlite3.dll, ktoré som v našom projekte uložil do časti pluginov. Tieto súbory sú volne dostupné na internete. Pre prvotné vytvorenie databázy som použil program DBBrowserforSQLite. 
+Pre prácu s databázou som sa rozhodol vytvoriť dva skripty a to Bodydodatabazy.cs, ktorý slúži na ukladanie súborov do databázy, a Databaza.cs, ktorý slúži na čítanie z databázy.
+Script na zápis má dve funkcie a to zmenmeno, ktorá slúži na uloženie mena hráča, ktoré hráč zadá do textového boxu po ukončení hry, ktorý sa objaví pri výhre alebo prehre, a funkcie zápis, ktorá slúži na zápis týchto informácií do databázy. Funkcia zápis by mohla byť použitá ostatnými členmi tímu, ak by potrebovali uložiť údaje do databázy, s tým, že by potrebovali pozmeniť len jediný textový reťazec sqlQuery, v ktorom je napísaný sql príkaz. Čiže je potrebná len základná znalosť sql jazyka.    
+Script Databaza.cs som použil pri práci so scénou score, kde som potreboval načítať a zobraziť informácie databázy. Keďže v hernom engine Unity nie je widget typu tabuľky, bolo nutné vyriešiť zobrazenie. V databáze je momentálne uložená jedna tabuľka, ktorá má dva stĺpce, a to meno a body, preto som sa to rozhodol vyriešiť jednoduchými textovými widgetmi. Na začiatku je tabuľka prázdna a po každej hre sa napĺňa novými údajmi, no stovky údajov by boli pre hráča zbytočné, preto som sa výpis rozhodol limitovať na maximálny počet desiatich zápisov s najlepšími výsledkami. Ako aj predchádzajúci script je použitie tohto skriptu ostatnými členmi tímu jednoduché a je potrebná len maličká úprava sql príkazu.  
+
+  - PohybNP2.cs a PohybNP3.cs
+  Nasledujúcou úlohou bolo vytvorenie viacerých skriptov pre pohyb nepriateľov. 
+Pre prvý skript PohybNP2.cs som sa rozhodol implementovať pohyb nepriateľa pomocou vodidiel. Tento pohyb funguje tak, že na mape je súbor neviditeľných bodov, v ktorom sa nepriateľ pohybu podľa zadaného poradia, má teda predurčenú opakujúcu sa trasu. Práca s týmto skriptom je jednoduchá, keďže jediným obmedzením je veľkosť mapy a čas pre vytvorenie poradovníka navštívenia vodidiel. Pri druhom skripte som sa rozhodol implementovať pohyb pomocou získavania polohy hráča, a tým nabudiť v hráčovi pocit neustáleho potreby neustáleho pohybu. 	Obidva skripty by sú jednoduché na použitie a je možná ich kombinácia. Pre nepriateľa by na prvotný pohyb boli využité vodidlá a ako náhle by sa hráč priblížil na určitú vzdialenosť od nepriateľov, by nepriateľ využil druhú skript a riadil sa podľa polohy hráča. 
+
 - Martina Brečková
 - Akbota Kassym
 
