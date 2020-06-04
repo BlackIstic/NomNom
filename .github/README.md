@@ -114,11 +114,9 @@ Tlačidlo zavolá InfoPanel spôsobom popísaným vyššie následne zmení mies
   
 ### Akbota Kassym
  
- Časť kódu, ktorú som urobila obsahuje skripty:
+ Mojou hlavnou úlohou bola práca na grafike a skriptoch:
 - na prácu s nepriatelom macmana
 - na prácu s pohybom a bodmi
-
-Okrem toho, som pracovala na grafike.
  
   - Macman_Pohyb.cs
   Skript čaká na vstup z klávesnice a keď stlačí hráč tlačidlo šípky reaguje pohybom postavičky o určitú vzdialenosť. Vzdialenosť je určená dĺžkou stlačenia a premennou rýchlosť .
