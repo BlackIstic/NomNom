@@ -117,6 +117,7 @@ Tlačidlo zavolá InfoPanel spôsobom popísaným vyššie následne zmení mies
  Časť kódu, ktorú som urobila obsahuje skripty:
 - na prácu s nepriatelom macmana
 - na prácu s pohybom a bodmi
+
 Okrem toho, som pracovala na grafike.
  
   - Macman_Pohyb.cs
